@@ -1,0 +1,7 @@
+<p id="notice"><%= notice %></p>
+
+<% @cart.line_items.each do |item| %>
+      <li><%= item.quantity %> &times; <%= item.product.title %></li>
+<% end %>
+
+<%= link_to 'Back', store_path %>

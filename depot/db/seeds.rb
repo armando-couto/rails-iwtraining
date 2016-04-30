@@ -9,4 +9,4 @@
 Product.delete_all
 
 Product.create!(title: 'Produto 1', description: 'Descrição do produto 1', price: 20.00)
-Product.create!(title: 'Produto 1', description: 'Descrição do produto 1', price: 19.90)
+Product.create!(title: 'Produto 2', description: 'Descrição do produto 1', price: 19.90)

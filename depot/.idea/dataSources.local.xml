@@ -4,5 +4,8 @@
     <data-source name="Rails depot: development" uuid="d5a333b3-fd94-47aa-a4a9-44be5eaaf86a">
       <auth-required>false</auth-required>
     </data-source>
+    <data-source name="Rails depot: test" uuid="42d5e355-8546-4f69-bfde-1cc5595d9332">
+      <auth-required>false</auth-required>
+    </data-source>
   </component>
 </project>
