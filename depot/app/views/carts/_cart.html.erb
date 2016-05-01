@@ -1,6 +1,2 @@
 <h2>Seu carrinho de compras</h2>
-<% if cart.line_items.empty? %>
-    <p>O carrinho está vazio</p>
-<% else %>
-    <%= render(cart.line_items) %>
-<% end %>
+<%= render(cart.line_items) %>
