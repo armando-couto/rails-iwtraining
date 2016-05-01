@@ -1,4 +1,5 @@
 class ProductsController < ApplicationController
+  recue_from ActiveRecord::RecordNotFound, with: :product_not_found
   before_action :set_product, only: [:show, :edit, :update, :destroy]
 
   # GET /products
@@ -70,5 +71,9 @@ class ProductsController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def product_params
       params.require(:product).permit(:title, :description, :price)
+    end
+
+    def product_not_found
+      redirect_to store_url, notice: 'Produto inválido'
     end
 end
